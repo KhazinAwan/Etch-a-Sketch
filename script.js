@@ -1,7 +1,20 @@
 const squareGridSize = 16
 const color = document.querySelector("#colorPicker")
+let changeColor = false
 
 const grid = document.querySelector(".grid")
+
+grid.addEventListener("click" , () => {
+
+    if(changeColor == false) {
+        changeColor = true
+    }
+
+    else {
+        changeColor = false
+    }
+})
+
 const clearGridButton = document.querySelector(".btn")
 
 clearGridButton.addEventListener("click" , () => {
@@ -25,7 +38,12 @@ for(let i = 0 ; i < (squareGridSize * squareGridSize); i++) {
 
     square.addEventListener("mouseenter" , () => {
 
-        square.style.backgroundColor = color.value
+        if(changeColor == true) {
+
+            square.style.backgroundColor = color.value
+
+        }
+
     })
 
 }
