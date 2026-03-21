@@ -1,12 +1,90 @@
 body {
     display: flex;
     flex-direction: column;
+
     min-height: 100vh;
+
     margin: 0;
+
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
+
 main {
+
+    display: flex;
     flex: 1;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 60px;
+
+    width: 480px;
+    height: 480px;
+
+}
+
+.gridContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 480px;
+    height: 480px;
+
+    
+}
+
+button {
+
+    width: 200px;
+    height: 50px;
+
+    padding: 10px;
+
+    border: 4px solid rgb(214, 40, 55);
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    color: rgb(214, 40, 55);;
+
+    font-size: 20px;
+    
+}
+
+
+header{
+    background-color: rgb(214, 40, 55);
+    color: white;
+
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 24px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(214, 40, 55);
+    color: white;
+
+    padding: 8px;
 }
 
 .grid {
@@ -16,6 +94,8 @@ main {
 
     display: flex;
     flex-wrap: wrap;
+
+    background-color: white;
 }
 
 .square {

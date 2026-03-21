@@ -19,6 +19,18 @@ grid.addEventListener("click" , () => {
 
 const clearGridButton = document.querySelector(".clearBtn")
 const setSizeButton = document.querySelector(".sizeBtn")
+const pickColorButton = document.querySelector(".colorBtn")
+const colorPicker = document.querySelector("#colorPicker")
+
+pickColorButton.addEventListener("click" , ()=> {
+
+    colorPicker.click()
+    
+})
+
+colorPicker.addEventListener("input" , () => {
+    pickColorButton.style.borderColor = colorPicker.value
+})
 
 clearGridButton.addEventListener("click" , () => {
 
